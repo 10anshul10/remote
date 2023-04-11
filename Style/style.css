@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -13,7 +14,8 @@ body{
 }
 
 .main{
-    height: 500px;
+    background-image: linear-gradient(to bottom, #d7d7d7, #c6c6c6, #b5b5b5, #a5a5a5, #959595);
+    height: 600px;
     width: 300px;
     border: 3px solid;
     border-radius: 30px;
@@ -24,6 +26,7 @@ body{
 }
 
 .scrn{
+    background-image: linear-gradient(to right bottom, #dbf3ff, #c8ecff, #b4e6ff, #9fdfff, #88d8ff);
     height: 150px;
     width: 200px;
     border: 2px solid;
@@ -31,6 +34,7 @@ body{
 }
 
 .btns{
+    background-color:aliceblue;
     height: 250px;
     width: 250px;
     border: 2px solid;
@@ -48,6 +52,16 @@ button{
     border-radius: 15px;
     font-weight: 800;
 }
+
+button:hover{
+    transform: scale(.92);
+    transition: .2s;
+}
+
+button:active{
+    transform: scale(.8);
+}
+
 .hide{
     display: none;
 }
@@ -55,9 +69,25 @@ button{
 button:hover + .hide{
     display: block;
     position: absolute;
-    top: 30vh;
+    top: 25vh;
     font-size: 30px;
     font-weight: bolder;    
-    color: #ff0000;
-    transition: 5s;
+    color:black;
+}
+.btn2{
+    background-color: red;
+}
+.btn1{
+    background-color:steelblue;
+}
+.btn5{
+    background-color: palegoldenrod;
+}
+.btn6{
+    background-color:limegreen;
+}
+
+.btn4, .btn3{
+    background-color:dimgray;
+    color: whitesmoke;
 }
